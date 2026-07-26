@@ -1,0 +1,6 @@
+{
+  "name": "CyberShield AI - Behavioral Anomaly Detection & SOC Platform",
+  "description": "AI/ML behavioral anomaly detection system modeling user & device baselines, detecting near real-time threats, classifying attack types, providing feature attributions and AI explainability.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

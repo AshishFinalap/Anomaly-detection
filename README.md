@@ -25,13 +25,13 @@ Login Event → Feature Engineering → Isolation Forest (Anomaly Detection)
 
 ## Attack Types Detected
 
-| Attack Type | Description |
-|---|---|
-| Brute Force | Multiple failed login attempts |
-| Credential Misuse | Valid credentials used suspiciously |
-| Device Spoofing | Login from unrecognized devices |
+| Attack Type       | Description                             |
+| ----------------- | --------------------------------------- |
+| Brute Force       | Multiple failed login attempts          |
+| Credential Misuse | Valid credentials used suspiciously     |
+| Device Spoofing   | Login from unrecognized devices         |
 | Impossible Travel | Physically implausible location changes |
-| Lateral Movement | Unusual resource access patterns |
+| Lateral Movement  | Unusual resource access patterns        |
 
 ## Project Structure
 
@@ -88,6 +88,7 @@ docker-compose up --build
 ### Option 2: Manual Setup
 
 **Backend:**
+
 ```bash
 cd backend/
 pip install -r requirements.txt
@@ -100,6 +101,7 @@ uvicorn app.main:app --reload --port 8000
 ```
 
 **Frontend:**
+
 ```bash
 cd frontend/
 npm install
@@ -108,13 +110,13 @@ npm start
 
 ## API Endpoints
 
-| Method | Endpoint | Description |
-|---|---|---|
-| GET | `/health` | Health check |
-| POST | `/predict` | Predict a single login event |
-| GET | `/alerts` | Get recent alert history |
-| GET | `/stats` | Get aggregate statistics |
-| POST | `/alerts/clear` | Clear alert history |
+| Method | Endpoint        | Description                  |
+| ------ | --------------- | ---------------------------- |
+| GET    | `/health`       | Health check                 |
+| POST   | `/predict`      | Predict a single login event |
+| GET    | `/alerts`       | Get recent alert history     |
+| GET    | `/stats`        | Get aggregate statistics     |
+| POST   | `/alerts/clear` | Clear alert history          |
 
 ### Example Request
 
@@ -158,20 +160,20 @@ curl -X POST http://localhost:8000/predict \
 
 The risk score (0–100) combines multiple signals:
 
-| Component | Max Points | Signal |
-|---|---|---|
-| Anomaly severity | 35 | How far outside "normal" the event is |
-| Classifier confidence | 25 | How certain the attack classification is |
-| Failed login attempts | 15 | Direct brute-force indicator |
-| New device + Country change | 15 | Account takeover indicators |
-| Travel speed | 5 | Physically implausible movement |
-| Sensitive resource access | 5 | High-value target accessed |
+| Component                   | Max Points | Signal                                   |
+| --------------------------- | ---------- | ---------------------------------------- |
+| Anomaly severity            | 35         | How far outside "normal" the event is    |
+| Classifier confidence       | 25         | How certain the attack classification is |
+| Failed login attempts       | 15         | Direct brute-force indicator             |
+| New device + Country change | 15         | Account takeover indicators              |
+| Travel speed                | 5          | Physically implausible movement          |
+| Sensitive resource access   | 5          | High-value target accessed               |
 
 ## Model Performance
 
-| Model | Metric | Value |
-|---|---|---|
-| Isolation Forest | ROC AUC | 0.769 |
+| Model              | Metric   | Value |
+| ------------------ | -------- | ----- |
+| Isolation Forest   | ROC AUC  | 0.769 |
 | XGBoost Classifier | Accuracy | 96.7% |
 | XGBoost Classifier | Macro F1 | 0.969 |
 
@@ -185,6 +187,7 @@ The risk score (0–100) combines multiple signals:
 ## Dataset
 
 Synthetic login-event dataset with 10,000 records and 19 features:
+
 - ~97% normal logins
 - ~3% attack events (5 attack types, ~55-68 samples each)
 
