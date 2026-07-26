@@ -1,0 +1,13 @@
+event_id,timestamp,user_id,department,location,country,device,os,browser,resource,login_hour,failed_attempts,new_device,country_changed,travel_speed_kmph,session_duration_min,unique_resources,attack_type,label
+E000001,2026-07-05T09:15:00,U0102,Engineering,Bangalore,India,MacBook Pro,macOS,Chrome,/dashboard/overview,9,0,0,0,0,45,2,None,0
+E000002,2026-07-05T09:30:00,U0105,Finance,Chennai,India,HP EliteBook,Windows 11,Edge,/finance/payroll,9,0,0,0,0,60,3,None,0
+E000003,2026-07-05T10:05:00,U0210,Operations,Mumbai,India,Dell Latitude,Windows 10,Firefox,/scada/gateway/status,10,0,0,0,0,120,1,None,0
+E000004,2026-07-05T10:12:00,U0655,Sales,Delhi,India,Lenovo ThinkPad,Windows 11,Chrome,/crm/leads,10,0,0,0,0,30,2,None,0
+E000005,2026-07-05T10:25:00,U0655,Sales,Tokyo,Japan,Unknown Device,Linux,Curl,/cloud/iam/role_policy_escalate,10,1,1,1,1150,2,8,Impossible Travel,1
+E000006,2026-07-05T11:00:00,U0304,IT Admin,Hyderabad,India,MacBook Air,macOS,Safari,/api/admin/users,11,0,0,0,0,90,4,None,0
+E000007,2026-07-05T11:02:00,U0812,HR,Bangalore,India,HP ProBook,Windows 11,Chrome,/auth/login,11,12,1,0,0,1,1,Brute Force,1
+E000008,2026-07-05T12:00:00,U0401,Engineering,Chennai,India,Dell XPS,Linux,Firefox,/gitlab/repo,12,0,0,0,0,180,3,None,0
+E000009,2026-07-05T13:15:00,U0515,Operations,Delhi,India,Lenovo ThinkPad,Windows 10,Edge,/factory/plc/config,13,0,0,0,0,40,2,None,0
+E000010,2026-07-05T13:20:00,U0515,Operations,Bucharest,Romania,Unmatched Box,Windows Server,CustomSpoofer,/factory/db/export_plc_config.bin,13,0,1,1,920,15,10,Device Spoofing,1
+E000011,2026-07-05T14:10:00,U0102,Engineering,Bangalore,India,MacBook Pro,macOS,Chrome,/messaging/inbox,14,0,0,0,0,20,1,None,0
+E000012,2026-07-05T15:00:00,U0922,Finance,Mumbai,India,Dell Latitude,Windows 11,Chrome,/sys/db/export_backup.sql,15,0,0,0,0,240,9,Lateral Movement,1
