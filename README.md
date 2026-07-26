@@ -1,5 +1,12 @@
 # AI-Powered Behavioral Anomaly Detection for Cybersecurity
 
+FILE LINK-https://drive.google.com/file/d/1QftsW6xp-PjMpo0Wo3RbAbqdeDCRFMn4/view
+Video Walkthrough
+A demonstration of the complete solution, including dataset generation, model pipeline, anomaly detection workflow, Streamlit dashboard, and system functionality.
+Google Drive:
+https://drive.google.com/file/d/19IAM23XWHUa-YVsgry_nj1E6tH0tEgY3/view?usp=sharing
+<img width="891" height="423" alt="image" src="https://github.com/user-attachments/assets/9c9aceb1-de07-4c59-8ad9-c61198baac7b" />
+
 A full-stack AI system that detects cybersecurity anomalies in login behavior using a two-stage ML pipeline (Isolation Forest + XGBoost), with SHAP explainability, a risk scoring engine, and a real-time SOC dashboard.
 <img width="1600" height="829" alt="image" src="https://github.com/user-attachments/assets/23131ee0-9abe-4dcb-b403-07ec2bb12705" />
 
@@ -23,6 +30,7 @@ Login Event → Feature Engineering → Isolation Forest (Anomaly Detection)
                                            │
                                     React SOC Dashboard
 ```
+<img width="960" height="430" alt="image" src="https://github.com/user-attachments/assets/a9f1dd1d-b811-4a03-916e-f5b6a4da3b46" />
 
 ## Attack Types Detected
 
@@ -102,6 +110,7 @@ uvicorn app.main:app --reload --port 8000
 ```
 
 **Frontend:**
+<img width="949" height="424" alt="image" src="https://github.com/user-attachments/assets/06420296-afeb-4dde-beaa-147be2157f85" />
 
 ```bash
 cd frontend/
@@ -135,6 +144,7 @@ curl -X POST http://localhost:8000/predict \
     "resource": "Payroll"
   }'
 ```
+
 
 ### Example Response
 
