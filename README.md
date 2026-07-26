@@ -1,6 +1,7 @@
 # AI-Powered Behavioral Anomaly Detection for Cybersecurity
 
 A full-stack AI system that detects cybersecurity anomalies in login behavior using a two-stage ML pipeline (Isolation Forest + XGBoost), with SHAP explainability, a risk scoring engine, and a real-time SOC dashboard.
+<img width="1600" height="829" alt="image" src="https://github.com/user-attachments/assets/23131ee0-9abe-4dcb-b403-07ec2bb12705" />
 
 ## Architecture
 
