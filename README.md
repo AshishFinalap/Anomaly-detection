@@ -1,14 +1,67 @@
 # AI-Powered Behavioral Anomaly Detection for Cybersecurity
 
-FILE LINK-https://drive.google.com/file/d/1QftsW6xp-PjMpo0Wo3RbAbqdeDCRFMn4/view
-Video Walkthrough
-A demonstration of the complete solution, including dataset generation, model pipeline, anomaly detection workflow, Streamlit dashboard, and system functionality.
-Google Drive:
-https://drive.google.com/file/d/19IAM23XWHUa-YVsgry_nj1E6tH0tEgY3/view?usp=sharing
-<img width="891" height="423" alt="image" src="https://github.com/user-attachments/assets/9c9aceb1-de07-4c59-8ad9-c61198baac7b" />
+An end-to-end AI-powered cybersecurity solution that detects anomalous login behavior using a hybrid machine learning pipeline. The system combines **Isolation Forest** for unsupervised anomaly detection with **XGBoost** for supervised risk classification, enhanced with **SHAP explainability**, a dynamic **risk scoring engine**, and a real-time **SOC dashboard** built with Streamlit.
 
-A full-stack AI system that detects cybersecurity anomalies in login behavior using a two-stage ML pipeline (Isolation Forest + XGBoost), with SHAP explainability, a risk scoring engine, and a real-time SOC dashboard.
-<img width="1600" height="829" alt="image" src="https://github.com/user-attachments/assets/23131ee0-9abe-4dcb-b403-07ec2bb12705" />
+---
+
+## 🎥 Video Walkthrough
+
+A complete walkthrough demonstrating:
+
+- Synthetic dataset generation
+- Data preprocessing pipeline
+- Isolation Forest + XGBoost workflow
+- SHAP-based model explainability
+- Risk scoring engine
+- Streamlit SOC dashboard
+- End-to-end anomaly detection system
+
+**Google Drive:**  
+https://drive.google.com/file/d/19IAM23XWHUa-YVsgry_nj1E6tH0tEgY3/view?usp=sharing
+
+---
+
+## 📄 Project Report
+
+**Google Drive:**  
+https://drive.google.com/file/d/1QftsW6xp-PjMpo0Wo3RbAbqdeDCRFMn4/view
+
+---
+
+## 🖥️ System Architecture
+
+<img width="891" height="423" alt="System Architecture" src="https://github.com/user-attachments/assets/9c9aceb1-de07-4c59-8ad9-c61198baac7b" />
+
+---
+
+## 📊 Real-Time SOC Dashboard
+
+<img width="1600" height="829" alt="SOC Dashboard" src="https://github.com/user-attachments/assets/23131ee0-9abe-4dcb-b403-07ec2bb12705" />
+
+---
+
+## ✨ Key Features
+
+- Hybrid anomaly detection using **Isolation Forest** and **XGBoost**
+- Explainable AI with **SHAP** feature importance
+- Dynamic risk scoring engine
+- Synthetic cybersecurity dataset generation
+- Real-time login anomaly detection
+- Interactive Streamlit SOC dashboard
+- Detailed attack insights and visual analytics
+- Modular and extensible ML pipeline
+
+## 🛠️ Tech Stack
+
+- Python
+- Scikit-learn
+- XGBoost
+- SHAP
+- Pandas
+- NumPy
+- Streamlit
+- Matplotlib
+- Seaborn
 
 ## Architecture
 
