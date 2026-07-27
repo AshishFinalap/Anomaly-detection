@@ -64,6 +64,7 @@ https://drive.google.com/file/d/1QftsW6xp-PjMpo0Wo3RbAbqdeDCRFMn4/view
 - Seaborn
 
 ## Architecture
+<img width="1614" height="974" alt="architect_final" src="https://github.com/user-attachments/assets/db76ce1f-c316-435c-be38-79f95cbcdca0" />
 
 ```
 Login Event → Feature Engineering → Isolation Forest (Anomaly Detection)
